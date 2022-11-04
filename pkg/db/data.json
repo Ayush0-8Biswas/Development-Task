@@ -1,0 +1,60 @@
+{
+	"eateries" : [
+		{
+			"name": "Babu Restaurant",
+			"location": "88F6+32R, Kharagpur, West Bengal 721302",
+			"image":"./images/babu-restaurant.png"
+		},
+		{
+			"name": "Smart Pind",
+			"location": "IIT Avenue Road, near Cafe Coffee Day, Scholar Canvas Stadium, IIT Kharagpur, Kharagpur, West Bengal 721302",
+			"image": "./images/smart-pind.png"
+		},
+		{
+			"name": "City Bites",
+			"location": "IIT Main Rd, PURIGATE, Kharagpur, West Bengal 721306",
+			"image": "./images/city-bytes.png"
+		},
+		{
+			"name": "Sahara Restaurant",
+			"location": "8874+M77, IIT Kharagpur, Kharagpur, West Bengal 721302",
+			"image": "./images/sahara-restaurant.png"
+		},
+		{
+			"name": "Rachit Fast Food",
+			"location" : "Puri gate, IIT Main Rd, Kharagpur, West Bengal 721306",
+			"image": "./images/rachit-food.png"
+		},
+		{
+			"name": "Billoo's Restaurant",
+			"location": "88C4+88H, IIT Kharagpur, Kharagpur, West Bengal 721302",
+			"image": "./images/biloos-restaurant.png"
+		},
+		{
+			"name": "Vegies Restaurant",
+			"location": "IIT Kharagpur, Kharagpur, West Bengal 721302",
+			"image": "./images/vegies-restaurant.png"
+		},
+		{
+			"name": "Subway",
+			"location": "Nalanda Complex, Ardeshir Dalal Ave, IIT Kharagpur, Kharagpur, West Bengal 721302",
+			"image": "./images/subway.png"
+		},
+		{
+			"name": "P F C",
+			"location": "Shop No. Oval 3, Inside IIT Kharagpur Campus, Near Patel Hall, Pan Loop, Kharagpur, West Bengal 721302",
+			"image": "./images/pfc.png"
+		},
+		{
+			"name": "Carlos",
+			"location": " 88C5+Q52, Rajendra Prasad Hall of Residence, In Between Mess and C-Block, New Bitumen Road, IIT Kharagpur, Kharagpur, West Bengal 721302",
+			"image": "./images/carlos.png"
+		},
+		{
+			"name": "Food Capital",
+			"location": " PURIGATE, opposite IIT KHARAGPUR, MAIN GATE, Kharagpur, West Bengal 721302",
+			"image": "./images/food-capital.png"
+		}
+
+	]
+}
