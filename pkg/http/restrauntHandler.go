@@ -2,7 +2,6 @@ package http
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -34,7 +33,7 @@ func GetRestaurants(w http.ResponseWriter, r *http.Request) {
 		log.Fatalln(err)
 	}
 
-	fmt.Println(data)
+	//fmt.Println(data)
 
 	x, err := json.Marshal(data)
 	if err != nil {
