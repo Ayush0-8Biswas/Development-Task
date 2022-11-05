@@ -1,7 +1,8 @@
 let container = document.getElementById('container')
 document.querySelector('body').style.backgroundColor = '#222528'
+const {origin} = window.location;
 
-fetch("http://localhost:8080/getRestaurants/").then(res => res.json()).then( data => {
+fetch(`${origin}/getRestaurants/`).then(res => res.json()).then( data => {
         console.log(data)
         for (let restaurant of data["eateries"]) {
             let x = document.createElement('div')

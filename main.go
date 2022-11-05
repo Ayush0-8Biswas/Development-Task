@@ -11,10 +11,11 @@ import (
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("./cmd/web/")))
 	http.HandleFunc("/getRestaurants/", http2.GetRestaurants)
-	fmt.Println("Started server at http://localhost:8080")
-	var port = os.Getenv("port")
+	var port = ":" + os.Getenv("PORT")
 	if port == "" {
+		log.Println("Port not found")
 		port = ":8080"
 	}
+	fmt.Println("Started server at http://localhost" + port)
 	log.Fatalln(http.ListenAndServe(port, nil))
 }
