@@ -7,9 +7,7 @@ fetch(`${origin}/getRestaurants/`).then(res => res.json()).then( data => {
         for (let restaurant of data["eateries"]) {
             let x = document.createElement('div')
             x.classList.add('card');
-            x.style.display = "flex";
-            x.style.flex = "20rem"
-            x.style.backgroundColor = '#303134'
+            x.classList.add('myCard')
             x.style.margin = '0.5rem';
             x.style.alignItems = "center";
 
@@ -23,21 +21,16 @@ fetch(`${origin}/getRestaurants/`).then(res => res.json()).then( data => {
 
             let title = document.createElement('h5');
             title.innerText = restaurant['name'];
-            title.style.color = 'aliceblue';
-            title.style.fontWeight = 'bold';
             title.classList.add('card-title');
 
             let text = document.createElement('p');
             text.innerText = restaurant['location'];
-            text.style.color = 'aliceblue';
             text.classList.add('card-text');
 
             let btn = document.createElement('a');
             btn.classList.add('btn');
             btn.innerText = "View Details";
-            btn.classList.add('btn-primary');
-            btn.style.width = "280px"
-            btn.style.margin = "2px"
+            btn.classList.add('gradient-button')
 
             bdy.appendChild(title);
             bdy.appendChild(text);
