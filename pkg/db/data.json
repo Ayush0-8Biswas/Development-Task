@@ -1,60 +1,213 @@
 {
-	"eateries" : [
+	"eateries": [
 		{
-			"name": "Babu Restaurant",
-			"location": "88F6+32R, Kharagpur, West Bengal 721302",
-			"image":"./images/babu-restaurant.png"
-		},
-		{
+			"id": "1",
 			"name": "Smart Pind",
 			"location": "IIT Avenue Road, near Cafe Coffee Day, Scholar Canvas Stadium, IIT Kharagpur, Kharagpur, West Bengal 721302",
-			"image": "./images/smart-pind.png"
+			"image": "./images/smart-pind.png",
+			"details": "Details of Smart Pind",
+			"menu": [
+				{"name": "Kadhai Paneer","price": "148"},
+				{"name": "Veg Fried Rice", "price": "94"},
+				{"name": "Honey Chill Potato", "price": "153"},
+				{"name": "Butter Chicken", "price": "83"},
+				{"name": "Veg Biriyani", "price": "153"},
+				{"name": "Cold Coffee", "price": "45"},
+				{"name": "Macaroni", "price": "90"},
+				{"name": "Dal Fry", "price": "100"},
+				{"name": "Aloo Pyaz Paratha", "price": "55"},
+				{"name": "Tandoori Chicken", "price": "378"},
+				{"name": "Afgani Chicken", "price": "336"},
+				{"name": "Matar Pulao", "price": "165"},
+				{"name": "Singapuri Chowmein", "price": "153"},
+				{"name": "Jeera Rice", "price": "100"},
+				{"name": "Chicken Chowmein", "price": "142"}
+			],
+			"comments": [
+				{
+					"name": "Ayush",
+					"text": "smart pind is very smart"
+				}
+			]
 		},
 		{
+			"id": "2",
 			"name": "City Bites",
 			"location": "IIT Main Rd, PURIGATE, Kharagpur, West Bengal 721306",
-			"image": "./images/city-bytes.png"
+			"image": "./images/city-bytes.png",
+			"details": "Details of City Bites",
+			"menu": [
+				{"name": "CityBite Item1", "price": "51"},
+				{"name": "CityBite Item69", "price": "69"},
+				{"name": "CityBite Item70", "price": "720"}
+			],
+			"comments": []
 		},
 		{
+			"id": "3",
 			"name": "Sahara Restaurant",
 			"location": "8874+M77, IIT Kharagpur, Kharagpur, West Bengal 721302",
-			"image": "./images/sahara-restaurant.png"
+			"image": "./images/sahara-restaurant.png",
+			"details": "Details of Sahara Restaurant",
+			"menu": [
+				{"name": "Item 1", "price": "40"},
+				{"name":  "Item 35", "price": "34"},
+				{"name": "Item 420", "price": "420"}
+			],
+			"comments": []
 		},
 		{
+			"id": "4",
 			"name": "Rachit Fast Food",
-			"location" : "Puri gate, IIT Main Rd, Kharagpur, West Bengal 721306",
-			"image": "./images/rachit-food.png"
+			"location": "Puri gate, IIT Main Rd, Kharagpur, West Bengal 721306",
+			"image": "./images/rachit-food.png",
+			"details": "Details of Rachit Fast Food",
+			"menu": [
+				{"name": "Fast 1", "price": "100"},
+				{"name": "Fast 55", "price": "200"},
+				{"name": "Fast 65", "price": "350"},
+				{"name": "Fast 90", "price": "400"}
+			],
+			"comments": []
 		},
 		{
-			"name": "Billoo's Restaurant",
-			"location": "88C4+88H, IIT Kharagpur, Kharagpur, West Bengal 721302",
-			"image": "./images/biloos-restaurant.png"
-		},
-		{
+			"id": "5",
 			"name": "Vegies Restaurant",
 			"location": "IIT Kharagpur, Kharagpur, West Bengal 721302",
-			"image": "./images/vegies-restaurant.png"
+			"image": "./images/vegies-restaurant.png",
+			"details": "Details of Vegies Restaurant",
+			"menu": [
+				{"name": "Veg Burger", "price": "500"},
+				{"name": "Veg Pizza", "price": "999"},
+				{"name": "Veg Sandwich", "price": "900"},
+				{"name": "Veg Biriyani", "price": "100"}
+			],
+			"comments": []
 		},
 		{
+			"id": "6",
 			"name": "Subway",
 			"location": "Nalanda Complex, Ardeshir Dalal Ave, IIT Kharagpur, Kharagpur, West Bengal 721302",
-			"image": "./images/subway.png"
+			"image": "./images/subway.png",
+			"details": "Details of Subway",
+			"menu": [
+				{"name": "Sub Burger", "price": "299"},
+				{"name": "Sub Pizza", "price": "399"},
+				{"name": "Sub Sandwich", "price": "499"}
+			],
+			"comments": []
 		},
 		{
+			"id": "7",
 			"name": "P F C",
 			"location": "Shop No. Oval 3, Inside IIT Kharagpur Campus, Near Patel Hall, Pan Loop, Kharagpur, West Bengal 721302",
-			"image": "./images/pfc.png"
+			"image": "./images/pfc.png",
+			"details": "Details of PFC",
+			"menu": [
+				{"name": "Chicken Biriyani", "price": "299"},
+				{"name": "Veg White Sauce Pasta", "price": "199"},
+				{"name": "Chicken Wings", "price": "299"},
+				{"name": "Strips Meal", "price": "259"},
+				{"name": "Chicken Burger Combo", "price": "279"},
+				{"name": "Chicken Malai Tikka Roll", "price": "169"},
+				{"name": "Paneer Butter Masala", "price": "249"}
+			],
+			"comments": []
 		},
 		{
+			"id": "8",
 			"name": "Carlos",
 			"location": " 88C5+Q52, Rajendra Prasad Hall of Residence, In Between Mess and C-Block, New Bitumen Road, IIT Kharagpur, Kharagpur, West Bengal 721302",
-			"image": "./images/carlos.png"
+			"image": "./images/carlos.png",
+			"details": "Details of Carlos",
+			"menu": [
+				{"name": "Item 1", "price": "184"},
+				{"name": "Item 2", "price": "173"},
+				{"name": "Item 3", "price": "543"},
+				{"name": "Item 3", "price": "345"},
+				{"name": "Item 9", "price": "543"},
+				{"name": "Item 4", "price": "173"},
+				{"name": "Item 1", "price": "513"},
+				{"name": "Item 5", "price": "124"},
+				{"name": "Item 8", "price": "610"},
+				{"name": "Item 6", "price": "550"},
+				{"name": "Item 1", "price": "40"},
+				{"name": "Item 7", "price": "134"},
+				{"name": "Item 10", "price": "120"}
+			],
+			"comments": []
 		},
 		{
+			"id": "9",
 			"name": "Food Capital",
 			"location": " PURIGATE, opposite IIT KHARAGPUR, MAIN GATE, Kharagpur, West Bengal 721302",
-			"image": "./images/food-capital.png"
+			"image": "./images/food-capital.png",
+			"details": "Details of Food Capital",
+			"menu": [
+				{"name": "Item 1", "price": "184"},
+				{"name": "Item 8", "price": "610"},
+				{"name": "Item 6", "price": "550"},
+				{"name": "Item 1", "price": "40"},
+				{"name": "Item 7", "price": "134"},
+				{"name": "Item 10", "price": "120"},
+				{"name": "Item 2", "price": "173"},
+				{"name": "Item 3", "price": "543"},
+				{"name": "Item 3", "price": "345"},
+				{"name": "Item 9", "price": "543"},
+				{"name": "Item 4", "price": "173"},
+				{"name": "Item 1", "price": "513"},
+				{"name": "Item 5", "price": "124"}
+			],
+			"comments": []
+		},
+		{
+			"id": "10",
+			"name": "Chedis",
+			"location": "Near, IIT Main Rd, Kharagpur, West Bengal 721302, India",
+			"image": "./images/chedis.png",
+			"details": "Details of Chedis",
+			"menu": [
+				{"name": "Tea Special", "price": "50"},
+				{"name": "Special Tea Ilaichi", "price": "150"},
+				{"name": "Special Tea 1234", "price": "150"}
+			],
+			"comments": []
+		},
+		{
+			"id": "11",
+			"name": "The Sandwich Walla",
+			"location": "IIT Main Rd, Gate, Kharagpur, West Bengal 721301, India",
+			"image": "./images/sandwichwalla.png",
+			"details": "Details of The Sandwich Walla",
+			"menu": [
+				{"name": "Sandwich 1", "price": "100"},
+				{"name": "Sandwich 2", "price": "150"},
+				{"name": "Sandwich 3", "price": "500"},
+				{"name": "Sandwich 4", "price": "900"},
+				{"name": "Sandwich 5", "price": "1000"},
+				{"name": "Sandwich 2", "price": "150"},
+				{"name": "Sandwich 1", "price": "100"},
+				{"name": "Sandwich 3", "price": "500"},
+				{"name": "Sandwich 4", "price": "900"},
+				{"name": "Sandwich 5", "price": "1000"}
+			],
+			"comments": []
+		},
+		{
+			"id": "12",
+			"name": "Peep Kitchen",
+			"location": "Shop No. W 13, Tech Market, IIT Kharagpur, Karagpur, West Bengal 721302, India",
+			"image": "./images/peep.png",
+			"details": "Details of Peep Kitchen",
+			"menu": [
+				{"name": "Peep 1", "price": "500"},
+				{"name": "Peep 2", "price": "420"},
+				{"name": "Peep 3", "price": "768"},
+				{"name": "Peep 1", "price": "500"},
+				{"name": "Peep 2", "price": "420"},
+				{"name": "Peep 3", "price": "768"}
+			],
+			"comments": []
 		}
-
 	]
 }

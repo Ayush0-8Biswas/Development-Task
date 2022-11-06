@@ -2,7 +2,7 @@ let container = document.getElementById('container')
 document.querySelector('body').style.backgroundColor = '#222528'
 const {origin} = window.location;
 
-fetch(`${origin}/getRestaurants/`).then(res => res.json()).then( data => {
+fetch(`${origin}/getRestaurants/`).then(res => res.json()).then(data => {
         console.log(data)
         for (let restaurant of data["eateries"]) {
             let x = document.createElement('div')
@@ -31,6 +31,7 @@ fetch(`${origin}/getRestaurants/`).then(res => res.json()).then( data => {
             btn.classList.add('btn');
             btn.innerText = "View Details";
             btn.classList.add('gradient-button')
+            btn.href = `${origin}/getDetails?id=${restaurant["id"]}`
 
             bdy.appendChild(title);
             bdy.appendChild(text);

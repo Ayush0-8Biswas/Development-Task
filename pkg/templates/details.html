@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,500&family=Tenor+Sans&display=swap');
+
+        body {
+            background-image: linear-gradient(to right,  #142C14 0%, #000000 25%, #142c14 51%, #000000 100%)
+        }
+
+        h1 {
+            display: inline;
+            color: aliceblue;
+            font-size: 75px;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: bold;
+        }
+
+        #heading {
+            margin: 1.5rem;
+            text-align: center;
+        }
+
+        #menuContainer {
+            text-align: center;
+            margin: 5rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .myCard {
+            padding: 1rem;
+            color: #FFF;
+            margin: 1rem;
+            display: flex;
+            flex: 12rem;
+            border-radius: 1rem;
+            background-image: linear-gradient(to right, #000000 0%, #082101 50%, #000000 100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="heading"><h1 id="name">Restaurant Name</h1></div>
+    <div class="container" id="details" style="background-image: linear-gradient(to right, #D8B53A 0%, #5bc26f 51%); border-radius: 1rem"></div>
+{{/*    <div id="menu" style="margin: 4rem">*/}}
+{{/*        <h1 style="font-size: 1.5rem; margin-left: 35rem;">Menu</h1>*/}}
+{{/*        <table class="table table-dark table-bordered mx-auto" style="width: 50rem" id="menuTable">*/}}
+{{/*            <thead>*/}}
+{{/*            <tr>*/}}
+{{/*                <th scope="col">#</th>*/}}
+{{/*                <th scope="col">Item</th>*/}}
+{{/*                <th scope="col">Price</th>*/}}
+{{/*            </tr>*/}}
+{{/*            </thead>*/}}
+{{/*            <tbody id="menuBody">*/}}
+
+{{/*            </tbody>*/}}
+{{/*        </table>*/}}
+{{/*    </div>*/}}
+    <div id="menuContainer"></div>
+    <div id="restaurantId" style="display: none">{{.Id}}</div>
+    <script>
+        let id = document.querySelector("#restaurantId").innerHTML;
+        const {origin} = window.location;
+        fetch(`${origin}/getRestDetails?id=${id}`).then(resp => resp.json()).then(data => {
+            console.log(data)
+            document.getElementById("name").innerText = data["name"];
+
+            let det = document.createElement('div');
+            det.innerText = `Location: ${data["location"]}\n` + data["details"];
+            det.style.fontSize = '1.5rem'
+            det.style.color = '#000';
+            document.getElementById("details").appendChild(det)
+
+            let menuContainer = document.getElementById("menuContainer")
+
+            for (let item of data["menu"]) {
+                let x = document.createElement('div')
+                x.classList.add('card')
+                x.classList.add('myCard')
+
+
+                let title = document.createElement('h5');
+                title.innerText = item['name'];
+                title.classList.add('card-title');
+
+                let text = document.createElement('p');
+                text.innerText = `Price: ₹${item['price']}`;
+                text.classList.add('card-text');
+
+                x.appendChild(title)
+                x.appendChild(text)
+
+                menuContainer.appendChild(x)
+            }
+
+            // let menuBody = document.getElementById("menuBody");
+            //
+            // let i = 1;
+            // for (let item of data["menu"]) {
+            //     let r = document.createElement('tr')
+            //
+            //     let x = document.createElement('th')
+            //     x.scope = "row"
+            //     x.innerText = i.toString();
+            //     i++;
+            //
+            //     let y = document.createElement('td')
+            //     y.innerText = item["name"];
+            //
+            //     let z = document.createElement('td')
+            //     z.innerText = item["price"];
+            //
+            //     r.appendChild(x);
+            //     r.appendChild(y);
+            //     r.appendChild(z);
+            //
+            //     menuBody.appendChild(r)
+            // }
+        })
+    </script>
+</body>
+</html>
