@@ -19,7 +19,7 @@ type RestaurantDetails struct {
 	Details  string     `json:"details"`
 	Image    string     `json:"image"`
 	Menu     []menuItem `json:"menu"`
-	Comments []comment  `json:"comments"`
+	Comments []Comment  `json:"comments"`
 }
 
 type menuItem struct {
@@ -27,7 +27,7 @@ type menuItem struct {
 	Price string `json:"price"`
 }
 
-type comment struct {
+type Comment struct {
 	Name string `json:"name"`
 	Text string `json:"text"`
 }

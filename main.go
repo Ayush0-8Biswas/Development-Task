@@ -13,6 +13,7 @@ func main() {
 	http.HandleFunc("/getRestaurants/", http2.GetRestaurants)
 	http.HandleFunc("/getDetails/", http2.GetDetails)
 	http.HandleFunc("/getRestDetails/", http2.GetRestDetails)
+	http.HandleFunc("/makeComment/", http2.MakeComment)
 
 	var port = ":" + os.Getenv("PORT")
 	if port == ":" {
